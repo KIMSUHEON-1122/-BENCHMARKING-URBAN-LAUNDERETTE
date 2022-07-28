@@ -1,0 +1,149 @@
+#service {
+}
+#service .inner {
+}
+#service .inner hgroup {
+}
+#service .inner hgroup .h5 {
+  font-size: 20px;
+  color: #aaa;
+}
+#service .inner hgroup .h2 {
+  line-height: 2;
+}
+#service .inner .contents {
+  flex-wrap: wrap;
+  row-gap: 150px;
+  margin-top: 60px;
+  column-gap: 50px;
+  padding-bottom: 500px;
+  box-sizing: border-box;
+  position: relative;
+}
+#service .inner .contents article {
+  width: calc(100%/3 - 100px / 3);
+}
+#service .inner .contents article a:hover::before{
+  border: 50px solid #636a52;
+}
+
+ #service .inner .contents article:nth-child(3n+1){
+  transform: translateY(25%);
+}
+ #service .inner .contents article:nth-child(3n+2){
+  transform: translateY(50%);
+}
+#service .inner .contents article a::before{
+  content: "";
+  width: 100%;
+  display:block;
+  height: 595px;
+  background-position: center;
+  background-size: cover;
+  transition: all 0.4s;
+  box-sizing: border-box;
+  background-origin: border-box;
+/*   그림이 border 영역부터 시작함.  */
+  border: 0px solid #636a52;
+}
+#service .inner .contents article:nth-of-type(1) a::before{
+  content: "";
+  width: 100%;
+  display: block;
+  height: 595px;
+  background-image: url(../img/s1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#service .inner .contents article:nth-of-type(2) a::before{
+  content: "";
+  width: 100%;
+  display: block;
+  height: 595px;
+  background-image: url(../img/s2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#service .inner .contents article:nth-of-type(3) a::before{
+  content: "";
+  width: 100%;
+  display: block;
+  height: 595px;
+  background-image: url(../img/s3.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#service .inner .contents article:nth-of-type(4) a::before{
+  content: "";
+  width: 100%;
+  display: block;
+  height: 595px;
+  background-image: url(../img/s4.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#service .inner .contents article:nth-of-type(5) a::before{
+  content: "";
+  width: 100%;
+  display: block;
+  height: 595px;
+  background-image: url(../img/s5.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#service .inner .contents article:nth-of-type(6) a::before{
+  content: "";
+  width: 100%;
+  display: block;
+  height: 595px;
+  background-image: url(../img/s6.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#service .inner .contents article:nth-of-type(1) a::after{
+  
+}
+#service .inner .contents article a {
+}
+#service .inner .contents article a .h4 {
+  font-size: 24px;
+  margin-bottom: 16px;
+  margin-top: 27px;
+}
+
+#service .inner .contents article a p{
+  color: #666;
+  font-weight: 550;
+  font-size: 15px;
+}
+#service .inner .contents article a p:nth-of-type(1){
+}
+#service .inner .contents>div{
+  
+}
+#service .inner .contents .more {
+  position: absolute;
+  bottom: 30px;
+  left: calc(50% - 50px);
+  width: 100px;
+  text-align: center;
+  font-weight: 600;
+}
+#service .inner .contents .more::before{
+  content: "";
+  border: 1px solid;
+  
+  position: absolute;
+  width: 30px;
+  transform: translateX(104px) translateY(3px);
+}
+#service .inner .contents .more::after{
+  content: "";
+  border: 2px solid;
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  border-bottom: transparent;
+  border-left: transparent;
+  transform: translateY(0px) translateX(34px)rotate(45deg);
+}
